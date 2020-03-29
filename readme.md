@@ -63,3 +63,16 @@ Load profile - every time you start a new bash window to create cordova applicat
 Run on physical android device with Developer mode and USB debugging turned on:
 
     cordova run android --device
+    
+    
+### 8. Example 1: MyElectric
+
+    cd MyElectric
+    cordova platform add android
+    cordova plugin add cordova-plugin-advanced-http
+
+Overwrite www directory with MyElectric example code from this repository.
+    
+Deploy:
+
+    cordova run android --device
