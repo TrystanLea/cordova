@@ -36,6 +36,11 @@ https://developer.android.com/studio
 In Android Studio > Configure > SDK Manager > SDK Platforms tab, I have Android 10 (Q) API level 29 and Android 9 (Pie) API level 28 installed.
 Under the SDK Tools tab I have Android SDK Build Tools, Android Emulator, Android SDK Platform Tools and Android SDK Tools installed
 
+I have the following directories in my Android/Sdk directory:
+
+    build-tools  emulator  licenses  patcher  platforms  platform-tools  skins  sources  system-images  tools
+
+
 ### 5. bash_profile
 
 In your home folder create a file called '.bash_profile' to hold relevant environment variables:
