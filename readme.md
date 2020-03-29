@@ -1,3 +1,7 @@
+# Cordova Testing
+
+![myelectric.png](myelectric.png)
+
 ## Installation
 
 - [Basic Cordova Hello World](https://cordova.apache.org/)
@@ -27,7 +31,10 @@
 
 ### 4. Android Studio and SDK
 
-https://developer.android.com/studio/
+https://developer.android.com/studio
+
+In Android Studio > Configure > SDK Manager > SDK Platforms tab, I have Android 10 (Q) API level 29 and Android 9 (Pie) API level 28 installed.
+Under the SDK Tools tab I have Android SDK Build Tools, Android Emulator, Android SDK Platform Tools and Android SDK Tools installed
 
 ### 5. bash_profile
 
