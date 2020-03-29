@@ -1,6 +1,9 @@
-# Installation
+## Installation
 
-# Node JS
+- [Basic Cordova Hello World](https://cordova.apache.org/)
+- [Cordova Android Platform Installation Guide](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
+
+### 1. Node JS
 
     curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
     sudo apt-get install -y nodejs
@@ -8,29 +11,25 @@
     node -v
     v13.12.0
 
-# Cordova
-
-    sudo npm install -g cordova 
-
-# Java
+### 2. Java
 
     apt-get install software-properties-common
     add-apt-repository ppa:linuxuprising/java
     apt-get update
     apt-get install oracle-java13-installer
 
-# Gradle
+### 3. Gradle
 
     apt-get install unzip zip
     curl -s "https://get.sdkman.io" | bash
     source "/root/.sdkman/bin/sdkman-init.sh"
     sdk install gradle 6.3
 
-# Android Studio and SDK
+### 4. Android Studio and SDK
 
 https://developer.android.com/studio/
 
-# bash_profile
+### 5. bash_profile
 
 In your home folder create a file called '.bash_profile' to hold relevant environment variables:
 
@@ -49,12 +48,18 @@ Load profile - every time you start a new bash window to create cordova applicat
 
     source .bash_profile
 
-# Hello World App
+### 6. Cordova
+
+    sudo npm install -g cordova 
+
+### 7. Hello World App
 
     cordova create MyApp
 
     cd MyApp
     cordova platform add browser
     cordova platform add android
+
+Run on physical android device with Developer mode and USB debugging turned on:
 
     cordova run android --device
