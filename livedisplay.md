@@ -57,7 +57,9 @@ The result should look like this:
 
 ![example1_p1.png](img/example1_p1.png)
 
-5\. At this point you may like to experiment with the html and css to make something more custom
+5\. At this point you may like to experiment with the html and css to make something more custom.
+
+See full Example1 code here [Example1/www](Example1/www)
 
 ![example1_p2.png](img/example1_p2.png)
 
