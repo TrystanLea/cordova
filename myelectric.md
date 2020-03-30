@@ -2,7 +2,7 @@
 
 This example adapts the Emoncms app MyElectric2 into a Cordova app.
 
-![myelectric.png](myelectric.png)
+![myelectric.png](img/myelectric.png)
 
 1\. Create new project:
 
@@ -14,7 +14,7 @@ This example adapts the Emoncms app MyElectric2 into a Cordova app.
     cordova platform add android
     cordova plugin add cordova-plugin-advanced-http
 
-3\. Overwrite www directory with MyElectric example code from this repository.
+3\. Overwrite www directory with MyElectric/www example code from this repository.
     
 4\. Deploy:
 
