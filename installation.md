@@ -38,6 +38,13 @@ To confirm either run: or open a new window..
 
 https://developer.android.com/studio
 
+1. Download Android Studio
+2. Unzip to home directory
+3. Run android-studio/bin/studio.sh
+4. Installation process will now start, select 'standard installation', android-studio will now download further packages.
+5. Andorid Studio 
+
+
 In Android Studio > Configure > SDK Manager > SDK Platforms tab, I have Android 10 (Q) API level 29 and Android 9 (Pie) API level 28 installed.
 Under the SDK Tools tab I have Android SDK Build Tools, Android Emulator, Android SDK Platform Tools and Android SDK Tools installed
 
