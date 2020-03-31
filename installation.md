@@ -26,7 +26,12 @@
 
     apt-get install unzip zip
     curl -s "https://get.sdkman.io" | bash
+    
+To confirm either run: or open a new window..
+
+    source ~/.bashrc
     source "/root/.sdkman/bin/sdkman-init.sh"
+
     sdk install gradle 6.3
 
 ### 4. Android Studio and SDK
