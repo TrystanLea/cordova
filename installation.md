@@ -13,14 +13,15 @@
 
 ### 2. Java
 
-    sudo apt-get install software-properties-common
-    sudo add-apt-repository ppa:linuxuprising/java
-    sudo apt-get update
-    sudo apt-get install oracle-java13-installer
-    sudo apt-get install oracle-java13-set-default
+IMPORTANT: Version 8 required.
+
+    sudo apt install openjdk-8-jdk
+    sudo apt install openjdk-8-jdk-headless
+
+Select version 8 of both:
     
-    $ javac -version
-    javac 13.0.2
+    sudo update-alternatives --config java
+    sudo update-alternatives --config javac
 
 ### 3. Gradle
 
@@ -42,16 +43,13 @@ https://developer.android.com/studio
 2. Unzip to home directory
 3. Run android-studio/bin/studio.sh
 4. Installation process will now start, select 'standard installation', android-studio will now download further packages.
-5. Andorid Studio 
-
 
 In Android Studio > Configure > SDK Manager > SDK Platforms tab, I have Android 10 (Q) API level 29 and Android 9 (Pie) API level 28 installed.
-Under the SDK Tools tab I have Android SDK Build Tools, Android Emulator, Android SDK Platform Tools and Android SDK Tools installed
+Under the SDK Tools tab I have Android SDK Build Tools, Android Emulator, Android SDK Platform Tools and Android SDK Command line tools installed
 
 I have the following directories in my Android/Sdk directory:
 
     build-tools  emulator  licenses  patcher  platforms  platform-tools  skins  sources  system-images  tools
-
 
 ### 5. bash_profile
 
@@ -63,9 +61,10 @@ In your home folder create a file called '.bash_profile' to hold relevant enviro
 
     export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
     export ANDROID_HOME="$HOME/Android/Sdk"
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
     export PATH=$PATH:$ANDROID_HOME/emulator
-    export PATH=$PATH:$ANDROID_HOME/tools
-    export PATH=$PATH:$ANDROID_HOME/tools/bin
+    export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest
+    export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
     export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 Load profile - every time you start a new bash window to create cordova applications - with: 
