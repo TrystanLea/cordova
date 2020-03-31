@@ -18,6 +18,9 @@
     sudo apt-get update
     sudo apt-get install oracle-java13-installer
     sudo apt-get install oracle-java13-set-default
+    
+    $ javac -version
+    javac 13.0.2
 
 ### 3. Gradle
 
