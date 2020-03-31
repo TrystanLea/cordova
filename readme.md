@@ -1,6 +1,6 @@
 # Cordova Testing
 
-![myelectric.png](img/myelectric.png)
+![myelectric.png](img/intro.png)
 
 ## Guide
 
