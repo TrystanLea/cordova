@@ -99,7 +99,6 @@ h1 {
     margin: 0;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
 #debug summary .last-entry {
     flex-grow: 1;
@@ -107,13 +106,16 @@ h1 {
     opacity: .8;
     padding-right: .5em;
 }
-#output {
+#debug #output {
     padding: 1em;
     border-radius: .1em;
     width: 90%;
     margin: 0;
     height: 33.3333vh;
     overflow-y: scroll;
+}
+#debug #output em {
+    color: #3273dc;
 }
 .reload-button {
     font-size: 1.25rem;

@@ -12,6 +12,7 @@ var app = {
     isWifiEnabled: false,
     log_history: [],
     max_history: 400,
+    online: false,
     /**
      * wait for device to be ready
      */
@@ -37,18 +38,21 @@ var app = {
         
         // handle all clicks on document
         document.addEventListener('click', function (event) {
+            var parent_list_item = getClosest(event.target, '.list_item');
             // app.log(event.target);
             if (event.target.classList.contains('reload-button')) {
                 event.preventDefault();
                 document.dispatchEvent(new CustomEvent('reload'));
-            } else if (event.target.classList.contains('list_item')) {
+            } else if (event.target.classList.contains('list_item') || parent_list_item) {
                 event.preventDefault();
-                document.dispatchEvent(new CustomEvent('connect', {detail: event.target.hash}));
+                var hash = (parent_list_item && parent_list_item.hash) ? parent_list_item.hash: event.target.hash;
+                document.dispatchEvent(new CustomEvent('connect', {detail: hash}));
             } else {
                 // no matches. carry on as normal..
             }
         }, false);
-        
+
+
         // check which wifi network we're on every 5s
         setInterval(function(){
             app.getConnectedSSID().then(app.showWifiNetworks());
@@ -194,6 +198,7 @@ var app = {
                 if (data.length === 0) throw "Empty Results";
                 app.log("Found: " + data.length);
                 app.accessPoints = data;
+                // console.log(JSON.stringify(data));
                 app.stopLoader();
             })
             .catch(function(reason){ 
@@ -262,9 +267,9 @@ var app = {
         app.getWifiScanResults();
     },
     connect: function(event) {
-        var ssid = event.detail.replace('#',''),
+        var ssid = event.detail.replace("#",""),
         bindAll = true,
-        password = prompt(`Password for ${ssid}?`),
+        password = prompt(`Password for ${ssid}?`, "ba6a3afea8"),
         algorithm = 'WPA',
         isHiddenSSID = false;
 
@@ -308,3 +313,9 @@ window.onerror = function(msg, source, lineno, colno, error) {
     }
     return true; // true == prevents the firing of the default event handler.
 }
+var getClosest = function (elem, selector) {
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+    return null;
+};
