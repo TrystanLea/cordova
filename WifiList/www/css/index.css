@@ -25,6 +25,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 1em;
+    padding-top: 2em;
 }
 
 h1 {
@@ -96,14 +97,25 @@ h1 {
     line-height: 2em;
     font-size: large;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
-#output {
+#debug summary .last-entry {
+    flex-grow: 1;
+    text-align: right;
+    opacity: .8;
+    padding-right: .5em;
+}
+#debug #output {
     padding: 1em;
     border-radius: .1em;
     width: 90%;
     margin: 0;
     height: 33.3333vh;
     overflow-y: scroll;
+}
+#debug #output em {
+    color: #3273dc;
 }
 .reload-button {
     font-size: 1.25rem;
