@@ -44,6 +44,7 @@ Git, Node, Java, Android Studio, Gradle & Cordova
     OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
     ```
 - [Android Studio][5]
+    - `Help -> About`
     - ![help->about](android-studio-help-about.png)
 - [Gradle][6]
     - `$ gradle --verson`
