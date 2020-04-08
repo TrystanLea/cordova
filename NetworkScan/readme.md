@@ -5,6 +5,8 @@ Will have the same functionality as the [EmonCMS Find Module](https://github.com
 
 [<img src="https://github.com/emoncms/find/blob/master/emoncms-find.png?raw=true" width="450"/>](https://github.com/emoncms/find/blob/master/emoncms-find.png?raw=true)
 
+![app screenshot](screenshot.jpg)
+
 # Cordova plugins:
 - `$ cordova plugin add cordova-plugin-network-information`
 - `$ cordova plugin add https://github.com/tripflex/wifiwizard2`
