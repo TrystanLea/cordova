@@ -1,0 +1,23 @@
+# Scan the current network for emoncms devices
+Android app to discover EmonCMS devices on local network.
+
+Will have the same functionality as the [EmonCMS Find Module](https://github.com/emoncms/find):
+
+[<img src="https://github.com/emoncms/find/blob/master/emoncms-find.png?raw=true" width="450"/>](https://github.com/emoncms/find/blob/master/emoncms-find.png?raw=true)
+
+![app screenshot](screenshot.jpg)
+
+# Cordova plugins:
+- `$ cordova plugin add cordova-plugin-network-information`
+- `$ cordova plugin add https://github.com/tripflex/wifiwizard2`
+
+# quick run
+- `$ cd NetworkScan`
+- `$ cordova platform add android`
+- `$ cordova run android`
+
+# debug
+open folder in vscode and press `F5` to test and debug.
+
+## problems
+- if you've already tested it, uninstall app to clear out issues with testing
