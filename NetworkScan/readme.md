@@ -10,9 +10,12 @@ Will have the same functionality as the [EmonCMS Find Module](https://github.com
 - `$ cordova plugin add https://github.com/tripflex/wifiwizard2`
 
 # quick run
-- `$ git clone [this repo]`
-- `$ cd [this repo]`
+- `$ cd NetworkScan`
+- `$ cordova platform add android`
 - `$ cordova run android`
 
-# problems
+# debug
+open folder in vscode and press `F5` to test and debug.
+
+## problems
 - if you've already tested it, uninstall app to clear out issues with testing
